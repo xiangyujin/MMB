@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买实训项目</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- mui滚动 -->
+    <div class="mui-scroll-wrapper">
+        <div class="mui-sscroll">
+            <!-- 头部 -->
+            <div class="header">
+                <a href="index.html" class="left">
+                    <img src="./images/header_logo.png" alt="">
+                </a>
+                <div class="right">
+                    <img src="./images/header_app.png" alt="">
+                </div>
+            </div>
+
+            <!-- 搜索商品 -->
+            <div class="search">
+                <div class="si">
+                    <input type="text" class="left" placeholder="请输入你想比价的商品">
+                </div>
+
+                <button class="right">搜索</button>
+            </div>
+            <!-- 导航 -->
+            <div class="nav">
+                <ul class="clearfix">
+                   <!-- 挖个坑 -->
+                </ul>
+            </div>
+            <!-- 推荐 -->
+            <div class="content">
+                <!-- 标题 -->
+                <div class="title">
+                    <span>超值折扣推荐</span>
+                    <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+                </div>
+
+                <!-- 内容 -->
+                <ul class="info">
+                   
+
+                   <!-- 挖个大坑 -->
+                </ul>
+
+
+                <!-- 更多 -->
+
+                <div class="more">
+                    <a href="">更多优惠信息 »</a>
+                </div>
+
+                <!--排行 -->
+
+                <div class="show">
+                    <div class="title">
+                        <span>品牌排行</span>
+                        <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+                    </div>
+                </div>
+
+                <!-- 链接 -->
+
+                <div class="link">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                    <a href="#" class="top">
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                </div>
+
+                <!-- 底部 -->
+
+                <div class="footer">
+                    <p>
+                        <a href="#" class="app">手机APP下载</a>
+                        <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+                    </p>
+                    <p>m.manmanbuy.com</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- 模板引擎 -->
+    <!-- 导航的模板 -->
+     
+    <script type="text/html" id="tpl">
+        {{ each result v i}}
+        <li>
+                <a href="{{v.titlehref}}" data-id="{{ v.indexmenuId }}">
+                    <!-- 返回一个html时,前加@, -->
+                   {{@v.img}}
+                    <p>{{v.name}}</p>
+                </a>
+            </li>
+          {{/each}}  
+    </script>
+
+    <!-- 推荐内容模板 -->
+
+    <script type="text/html" id="tpl2">
+        {{ each result v i}}
+        <li class="clearfix">
+                <div class="info_left">
+                    <a href="moneyproduct.html?productid={{v.productId}}" data-id="{{v.productId}}">
+                        {{@v.productImgSm}}
+                    </a>
+                </div>
+
+                <div class="info_right">
+                    <div class="top">
+                        <p>
+                            {{v.productName}}
+                        </p>
+                        <span>{{v.productPinkage }}</span>
+                    </div>
+                    <div class="bottom clearfix">
+                        <p>{{v.productFrom}} | {{v.productTime}}
+                        </p>
+                        <span> {{v.productComCount}}</span>
+                    </div>
+                </div>
+            </li>
+            {{ /each}}
+    </script>
+
+
+
+
+    <!-- 引用的js文件 -->
+    <script src="./lib/jquery-1.12.4.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

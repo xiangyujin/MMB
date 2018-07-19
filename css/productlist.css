@@ -1,0 +1,74 @@
+body {
+  background-color: #fff;
+}
+.nav {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  background-image: linear-gradient(#ffffff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+}
+.nav .right {
+  height: 30px;
+  border-radius: 5px;
+  padding-top: 2px;
+  margin: 0px;
+  margin-right: 10px;
+  background-image: linear-gradient(#ebebeb, #ffffff);
+}
+.nav .left {
+  font-size: 14px;
+}
+.info {
+  background-color: #fff;
+  position: relative;
+  padding-left: 100px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.info .big {
+  height: 120px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+}
+.info_left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+}
+.info_left a img {
+  height: 100%;
+}
+.info_right {
+  margin-left: 20px;
+  padding-right: 10px;
+  height: 100%;
+  width: 100%;
+}
+.info_right .top {
+  height: 40px;
+  padding-top: 5px;
+}
+.info_right .top p {
+  color: black;
+}
+.info_right .top .price {
+  font-size: 18px;
+  color: red;
+}
+.info_right .bottom {
+  padding-top: 0px;
+  height: 80%;
+}
+.info_right .bottom span {
+  padding-top: 40px;
+  padding-right: 15px;
+  float: left;
+  font-size: 10px;
+  color: #8f8f94;
+}

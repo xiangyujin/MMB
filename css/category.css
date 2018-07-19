@@ -1,0 +1,30 @@
+.category ul {
+  border: 1px solid #ccc;
+}
+.category ul li {
+  font-weight: 700;
+  background-color: #eee;
+}
+.category ul li ul {
+  padding: 0 !important;
+  margin: 0;
+  background-color: #eee;
+}
+#collapse {
+  overflow: hidden;
+  margin: -8px -15px -11px;
+  padding: 0;
+  background-color: #fff;
+}
+.small_title {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 33.33%;
+  float: left;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #fff!important;
+}

@@ -1,0 +1,150 @@
+.nav {
+  background-color: #fff;
+  padding: 10px 0 20px;
+  margin-bottom: 10px;
+}
+.nav li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.nav li a {
+  color: #333;
+}
+.nav li a img {
+  width: 1.6rem;
+  display: block;
+  margin: 0.2rem auto;
+}
+.nav li a p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #8f8f94;
+}
+.title {
+  background-image: linear-gradient(#ffaf47, #ff9000);
+  padding-left: 10px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  color: #fff;
+}
+.title img {
+  height: 20px;
+  float: right;
+  margin: 10px 10px;
+}
+.info {
+  background-color: #fff;
+}
+.info li {
+  height: 120px;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+  padding-left: 100px;
+  margin-right: 20px;
+}
+.info_left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+}
+.info_left a {
+  width: 100px;
+  height: 100px;
+}
+.info_left a img {
+  height: 100%;
+}
+.info_right {
+  margin-left: 20px;
+  padding-right: 10px;
+  height: 100%;
+  width: 100%;
+}
+.info_right .top {
+  height: 40px;
+}
+.info_right .top p {
+  display: inline-block;
+  color: black;
+}
+.info_right .top span {
+  color: #ff841d;
+}
+.info_right .bottom {
+  padding-top: 0px;
+  height: 80%;
+}
+.info_right .bottom p {
+  padding-top: 40px;
+  float: left;
+  font-size: 10px;
+  color: #8f8f94;
+}
+.info_right .bottom span {
+  padding-top: 40px;
+  display: block;
+  float: right;
+  font-size: 10px;
+  color: #8f8f94;
+}
+.more {
+  background-color: #fff;
+  height: 52px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.more a {
+  display: block;
+  height: 100%;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 32px;
+  background: linear-gradient(#ffffff, #f4f4f4);
+  color: black;
+  font-size: 14px;
+}
+.link {
+  margin: 20px 0;
+  height: 34px;
+}
+.link a {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  border: 1px solid #c4c4c4;
+  line-height: 34px;
+  text-align: center;
+  border-left: none;
+  font-size: 14px;
+}
+.link .top img {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.footer {
+  text-align: center;
+  height: 60px;
+}
+.footer p {
+  font-size: 12px;
+}
+.footer .app {
+  color: #f00;
+  display: inline-block;
+}
+.footer .phone {
+  color: #333;
+  display: inline-block;
+}
+.hidden {
+  display: none;
+}
